@@ -12630,23 +12630,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-	name: "libmegface",
-	owner: "xiaomi",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm: {
-			srcs: ["proprietary/vendor/lib/libmegface.so"],
-			shared_libs: ["libm", "liblog", "libdl", "libc", ],
-		},
-	},
-	compile_multilib: "32",
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
 	name: "libmibokeh_660",
 	owner: "xiaomi",
 	strip: {
@@ -14356,23 +14339,6 @@ cc_prebuilt_library_shared {
 		android_arm: {
 			srcs: ["proprietary/vendor/lib/libmmcamera_le2464c_master_eeprom.so"],
 			shared_libs: ["libcutils", "liblog", "libmmcamera2_sensor_modules", "libmmcamera_eeprom_util", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "32",
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "libmmcamera_mg_facepp_lib",
-	owner: "xiaomi",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm: {
-			srcs: ["proprietary/vendor/lib/libmmcamera_mg_facepp_lib.so"],
-			shared_libs: ["libcutils", "liblog", "libmmcamera_dbg", "libmmcamera_imglib", "libmegface", "libMegviiFacepp-0.5.2", "libc++", "libc", "libm", "libdl", ],
 		},
 	},
 	compile_multilib: "32",
