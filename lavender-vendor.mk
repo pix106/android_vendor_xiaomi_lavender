@@ -824,7 +824,6 @@ PRODUCT_PACKAGES += \
     libjpegehw \
     libmegface \
     libmibokeh_660 \
-    libmm-qcamera \
     libmmcamera2_c2d_module \
     libmmcamera2_cpp_module \
     libmmcamera2_frame_algorithm \
@@ -844,7 +843,6 @@ PRODUCT_PACKAGES += \
     libmmcamera_arcsoftbokeh_lib \
     libmmcamera_atmel_at24c32e_eeprom \
     libmmcamera_bokeh \
-    libmmcamera_dbg \
     libmmcamera_depth_map \
     libmmcamera_dummyalgo \
     libmmcamera_eebinparse \
@@ -939,8 +937,6 @@ PRODUCT_PACKAGES += \
     libmmcamera_thread_services \
     libmmcamera_tintless_algo \
     libmmcamera_tintless_bg_pca_algo \
-    libmmcamera_tuning \
-    libmmcamera_tuning_lookup \
     libmmjpeg \
     libmmqjpeg_codec \
     libmmqjpegdma \

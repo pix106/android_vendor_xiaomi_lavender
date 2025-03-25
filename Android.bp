@@ -12684,23 +12684,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-	name: "libmm-qcamera",
-	owner: "xiaomi",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm: {
-			srcs: ["proprietary/vendor/lib/libmm-qcamera.so"],
-			shared_libs: ["libcutils", "liblog", "libmmcamera_interface", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "32",
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
 	name: "libmmcamera2_c2d_module",
 	owner: "xiaomi",
 	strip: {
@@ -14614,40 +14597,6 @@ cc_prebuilt_library_shared {
 		android_arm: {
 			srcs: ["proprietary/vendor/lib/libmmcamera_tintless_bg_pca_algo.so"],
 			shared_libs: ["libcutils", "liblog", "libmmcamera_dbg", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "32",
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "libmmcamera_tuning",
-	owner: "xiaomi",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm: {
-			srcs: ["proprietary/vendor/lib/libmmcamera_tuning.so"],
-			shared_libs: ["libmmcamera_tuning_lookup", "libmmcamera2_mct", "libmmcamera2_stats_modules", "libmmcamera2_iface_modules", "libmmcamera2_isp_modules", "libmmcamera2_sensor_modules", "libmmcamera2_pproc_modules", "libmmcamera2_imglib_modules", "libmmcamera_eztune_module", "libmm-qcamera", "liblog", "libcutils", "libfastcvopt", "libmmcamera_dbg", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "32",
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "libmmcamera_tuning_lookup",
-	owner: "xiaomi",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm: {
-			srcs: ["proprietary/vendor/lib/libmmcamera_tuning_lookup.so"],
-			shared_libs: ["liblog", "libcutils", "libfastcvopt", "libc++", "libc", "libm", "libdl", ],
 		},
 	},
 	compile_multilib: "32",
