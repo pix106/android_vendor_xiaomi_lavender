@@ -80,7 +80,6 @@ PRODUCT_COPY_FILES += \
 
 PRODUCT_PACKAGES += \
     gatekeeper.sdm660 \
-    liboemcrypto \
     libSNPE \
     libSonyIMX376C3RmscLibrary \
     libSonyIMX376KRmscLibrary \
@@ -959,6 +958,7 @@ PRODUCT_PACKAGES += \
     libgf_ca \
     libgf_hal \
     libgoodixhwfingerprint \
+    liboemcrypto \
     libvendor.goodix.hardware.interfaces.biometrics.fingerprint@2.1 \
     vendor.qti.hardware.fingerprint@1.0 \
     nuance

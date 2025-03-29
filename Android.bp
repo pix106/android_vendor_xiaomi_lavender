@@ -33,27 +33,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-	name: "liboemcrypto",
-	owner: "xiaomi",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm: {
-			srcs: ["proprietary/vendor/lib/liboemcrypto.so"],
-			shared_libs: ["libutils", "libcutils", "liblog", "libQSEEComAPI", "libhdcpsrm", "libcpion", "libhidlbase", "vendor.display.config@1.0", "libc++", "libc", "libm", "libdl", ],
-		},
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/liboemcrypto.so"],
-			shared_libs: ["libutils", "libcutils", "liblog", "libQSEEComAPI", "libhdcpsrm", "libcpion", "libhidlbase", "vendor.display.config@1.0", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "both",
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
 	name: "libSNPE",
 	owner: "xiaomi",
 	strip: {
@@ -14974,6 +14953,23 @@ cc_prebuilt_library_shared {
 		android_arm64: {
 			srcs: ["proprietary/vendor/lib64/libgoodixhwfingerprint.so"],
 			shared_libs: ["liblog", "libc++", "libcutils", "libhidlbase", "libhwbinder", "libutils", "libhidltransport", "libvendor.goodix.hardware.interfaces.biometrics.fingerprint@2.1", "libgf_hal", "libgf_ca", "libQSEEComAPI", "libc", "libm", "libdl", ],
+		},
+	},
+	compile_multilib: "64",
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "liboemcrypto",
+	owner: "xiaomi",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/liboemcrypto.so"],
+			shared_libs: ["libutils", "libcutils", "liblog", "libQSEEComAPI", "libhdcpsrm", "libcpion", "libhidlbase", "vendor.display.config@1.0", "libc++", "libc", "libm", "libdl", ],
 		},
 	},
 	compile_multilib: "64",
